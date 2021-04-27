@@ -46,6 +46,6 @@ class GuitarsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def guitar_params
-      params.require(:guitar).permit(:make, :model, :sn, :price, :finish, :notes)
+      params.require(:guitar).permit(:make, :model, :sn, :price, :finish, :notes, :year)
     end
 end
